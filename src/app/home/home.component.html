@@ -11,12 +11,9 @@
       <ul class="list-group">
         <li
           class="list-group-item"
-          *ngFor="
-            let server of servers | filter : filteredStatus;
-            let i = index
-          "
+          *ngFor="let movie of movies | filter : filteredStatus; let i = index"
         >
-          <strong>{{ server.title }}</strong>
+          <strong>{{ movie.title }}</strong>
           <button class="btn btn-primary" (click)="book(i)">Book Ticket</button>
         </li>
       </ul>

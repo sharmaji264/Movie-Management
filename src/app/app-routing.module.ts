@@ -13,7 +13,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'details/:id', component: MovieDetailsComponent },
   { path: 'timings/:id', component: TimingsComponent },
-  { path: 'confirmation/:id/:time', component: ConfirmationComponent },
+  { path: 'confirmation/:id/:time/:seats', component: ConfirmationComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'edit/:id', component: EditCustomerComponent },
   // { path: '**', redirectTo: '/not-found' },

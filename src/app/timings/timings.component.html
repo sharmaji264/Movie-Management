@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
   <h1>Showtimes</h1>
   <img class="movie-poster" [src]="poster" alt="Movie poster" />
@@ -19,6 +20,19 @@
         <option value="2">16:00</option>
         <option value="3">18:00</option>
         <option value="4">20:00</option>
+      </select>
+      <label for="secret">Select number of seats:</label>
+      <select
+        id="seats"
+        class="form-control"
+        [ngModel]="deafultSeat"
+        name="seats"
+      >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
       </select>
     </div>
   </form>

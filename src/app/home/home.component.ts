@@ -14,11 +14,16 @@ export class HomeComponent implements OnInit {
     private route: ActivatedRoute
   ) {}
 
-  servers;
+  movies: {
+    title: string;
+    description: string;
+    poster: string;
+    trailers: string;
+  }[];
   filteredStatus = '';
 
   ngOnInit(): void {
-    this.servers = this.moviesService.servers;
+    this.movies = this.moviesService.servers;
   }
 
   book(idx: number) {

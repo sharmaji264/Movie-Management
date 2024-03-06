@@ -1,11 +1,10 @@
+<app-navbar></app-navbar>
 <div class="movie-body">
   <div class="movie-details">
     <h1 class="title">{{ title }}</h1>
     <img class="poster" [src]="poster" alt="Movie poster" />
-    <p class="description">
-      {{ description }}
-    </p>
-    <a href="https://www.google.com">Trailer Link</a>
+    <p class="description">Description:- {{ description }}</p>
+    <a [href]="trailer" target="_blank">Watch Trailer</a>
     <br />
     <button
       class="btn btn-primary"

@@ -12,6 +12,8 @@ export class ConfirmationComponent {
   time: string;
   poster: string;
   error = false;
+  seats: number;
+  price: number;
   constructor(
     private moviesService: MoviesService,
     private router: Router,
@@ -20,6 +22,8 @@ export class ConfirmationComponent {
     this.route.params.subscribe((params: any) => {
       this.index = params['id'];
       this.time = this.moviesService.timings[params['time']].time;
+      this.seats = this.moviesService.seats[params['seats']].id;
+      this.price = this.seats * 100;
     });
     // console.log(this.index);
     this.title = this.moviesService.servers[this.index].title;
@@ -30,7 +34,7 @@ export class ConfirmationComponent {
     this.error = true;
   }
 
-  onHandleError() {
+  onHandleCancel() {
     this.error = false;
     // this.recordsService.delete(this.idx);
   }

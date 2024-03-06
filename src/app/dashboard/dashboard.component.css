@@ -1,0 +1,13 @@
+.container {
+  margin-top: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+}

@@ -13,13 +13,8 @@ export class TimingsComponent {
   index: number;
   title: string;
   poster: string;
-  timings = [
-    { id: 1, time: '14:00' },
-    { id: 2, time: '16:00' },
-    { id: 3, time: '18:00' },
-    { id: 4, time: '20:00' },
-  ];
   default = '1';
+  deafultSeat = '1';
   constructor(
     private moviesService: MoviesService,
     private router: Router,
@@ -34,6 +29,7 @@ export class TimingsComponent {
   }
   onSubmit() {
     let timing = this.signupForm.value.secret;
-    this.router.navigate(['confirmation', this.index, timing - 1]);
+    let seats = this.signupForm.value.seats;
+    this.router.navigate(['confirmation', this.index, timing - 1, seats - 1]);
   }
 }

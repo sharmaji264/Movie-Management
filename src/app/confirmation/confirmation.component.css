@@ -25,7 +25,20 @@ body {
 }
 
 .poster {
-  width: 200px;
+  width: auto;
   height: 300px;
   border-radius: 5px;
+}
+
+.movie-details {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.movie-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

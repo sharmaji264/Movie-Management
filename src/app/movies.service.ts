@@ -8,22 +8,23 @@ export class MoviesService {
   servers = [
     {
       title: 'Sholay',
-      description: 'Production',
+      description: 'Amitabh Bachan',
       poster:
         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdPNiHkvCCo2Y5TDcLRD74MS9wUzW_zPukshPjDwMljO7sy_uchQx75L-qi6_htTViF_n3',
-      trailers: 'gg',
+      trailers: 'https://www.youtube.com/watch?v=zzTUvWfvlBg',
     },
     {
       title: 'Kantara',
-      description: 'Production',
-      poster: 'stable',
-      trailers: 'gg',
+      description: 'Dhasu',
+      poster:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlGRn9XQGPisR-C8rnctHJnPeQTXIyV43e_aBgqXL0HIq3gV0QS5_botr-EZfnA11T72JPLQ',
+      trailers: 'https://www.youtube.com/watch?v=6oKFao0aISA',
     },
     {
       title: 'Kabir Singh',
-      description: 'Production',
-      poster: 'stable',
-      trailers: 'gg',
+      description: 'Heartbroken',
+      poster: 'https://upload.wikimedia.org/wikipedia/en/d/dc/Kabir_Singh.jpg',
+      trailers: 'https://www.youtube.com/watch?v=RiANSSgCuJk',
     },
   ];
 
@@ -32,6 +33,14 @@ export class MoviesService {
     { id: 2, time: '16:00' },
     { id: 3, time: '18:00' },
     { id: 4, time: '20:00' },
+  ];
+
+  seats = [
+    { id: 1, seat: '1' },
+    { id: 2, seat: '2' },
+    { id: 3, seat: '3' },
+    { id: 4, seat: '4' },
+    { id: 5, seat: '5' },
   ];
 
   index: number;
@@ -58,7 +67,7 @@ export class MoviesService {
       poster: poster,
       trailers: trailers,
     });
-    alert('User Added');
+    alert('Movie Added');
   }
 
   updateTask(
