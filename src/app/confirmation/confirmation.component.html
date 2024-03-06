@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
+    <app-alert
+      *ngIf="error"
+      (close)="onHandleError()"
+      (yes)="onHandleYes()"
+    ></app-alert>
+  </div>
+</div>
+<div class="container">
+  <h1>Booking Review</h1>
+  <img class="poster" [src]="poster" alt="Movie poster" />
+  <div class="booking-summary">
+    <h1>Movie: {{ title }}</h1>
+    <p>Showtime: {{ time }}</p>
+    <p>Seats: Row 3, Seats 4-6</p>
+    <p>Total Price: $30.00</p>
+  </div>
+  <button class="confirm-button" (click)="payment()">Make Payment</button>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Showtimes</h1>
+  <img class="movie-poster" [src]="poster" alt="Movie poster" />
+  <h2>{{ title }}</h2>
+  <p></p>
+  <div id="showtimes"></div>
+  <form #f="ngForm">
+    <div class="form-group">
+      <label for="secret"
+        >Select a showtime to proceed to seat selection:</label
+      >
+      <select
+        id="secret"
+        class="form-control"
+        [ngModel]="default"
+        name="secret"
+      >
+        <option value="1">14:00</option>
+        <option value="2">16:00</option>
+        <option value="3">18:00</option>
+        <option value="4">20:00</option>
+      </select>
+    </div>
+  </form>
+  <button class="btn btn-primary" (click)="onSubmit()">Book</button>
+</div>

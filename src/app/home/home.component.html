@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <label for="filter">Search Bar</label>
+      <input type="text" [(ngModel)]="filteredStatus" />
+      <br />
+      <br /><br />
+      <h2>Movies List:</h2>
+      <hr />
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="
+            let server of servers | filter : filteredStatus;
+            let i = index
+          "
+        >
+          <strong>{{ server.title }}</strong>
+          <button class="btn btn-primary" (click)="book(i)">Book Ticket</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

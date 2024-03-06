@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.booking-summary {
+  margin-bottom: 20px;
+}
+.booking-summary h1 {
+  font-size: 24px;
+  margin-top: 0;
+}
+.booking-summary p {
+  margin-bottom: 0;
+}
+.confirm-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.poster {
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+}

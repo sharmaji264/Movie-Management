@@ -1,0 +1,18 @@
+.movie-poster {
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.showtime {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.showtime:hover {
+  background-color: #f0f0f0;
+}

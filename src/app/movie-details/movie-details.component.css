@@ -1,0 +1,32 @@
+.movie-details {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.poster {
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.trailer {
+  width: 640px;
+  height: 360px;
+  border-radius: 5px;
+}
+
+.movie-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+}

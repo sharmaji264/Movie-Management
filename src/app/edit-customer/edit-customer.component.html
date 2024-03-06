@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-xs-12 col-md-8 col-md-offset-2">
+    <h3>Enter Details</h3>
+    <div class="form-group">
+      <label>Title</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="name"
+        #Name
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <input
+        type="email"
+        class="form-control"
+        [(ngModel)]="email"
+        #Email
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label>Poster</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="phone"
+        #Phone
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label>Trailers</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="address"
+        #Address
+        required
+      />
+    </div>
+    <button
+      class="btn btn-primary"
+      (click)="
+        onCreateAccount(Name.value, Email.value, Phone.value, Address.value)
+      "
+    >
+      Edit Customer
+    </button>
+  </div>
+</div>
